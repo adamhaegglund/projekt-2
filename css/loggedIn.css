@@ -1,0 +1,54 @@
+.button-menu-container {
+    display: flex;
+    justify-content: end;
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+.button-menu-container button {
+    font-size: 2rem;
+}
+.user-dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(68, 68, 68, 1.0);
+    top: 2.5rem;
+    transform-origin: top;
+    transform: scaleY(0);
+    z-index: 999;
+}
+.user-dropdown li a {
+    color: white;
+}
+
+.menu-open {
+    transform: scaleY(1);
+    transition: transform 150ms ease-in-out;
+}
+.main-content-container {
+    padding: 0 5rem;
+    gap: 1rem;
+}
+.recent-uploads, .recent-uploads-favorite, .search-and-latest-post {
+    height: 95%;
+}
+
+.recent-uploads {
+    flex: 2.5;
+    background-color: white;
+    border: 2px solid red;
+}
+.recent-uploads-favorite {
+    flex: 2.5;
+    background-color: white;
+    border: 2px solid red;
+}
+.search-and-latest-post {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    flex: 3;
+    background-color: white;
+    border: 2px solid red;
+}

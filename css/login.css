@@ -1,0 +1,131 @@
+.page-container {
+    display: flex;
+    position: relative;
+}
+.image-container {
+    width: 65%;
+    height: 100%;
+}
+.image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.register-login-container {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 80%;
+}
+.form-container-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 80%;
+}
+.form-container h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+.form-container-login h2{
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 90%;
+}
+.form-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+    width: 80%;
+}
+input{
+    border: none;
+    border-bottom: 2px solid black;
+    width: 100%;
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+label {
+    position: absolute;
+    pointer-events: none;
+    font-size: 1.2rem;
+    font-weight: 300;
+    letter-spacing: 5px;
+    color: #515151;
+    text-transform: lowercase;
+    z-index: 100;
+    transition: all 150ms ease-in-out;
+}
+.form-wrapper:focus-within > label {
+    transform: translateY(-2rem);
+}
+.input-filled {
+    transform: translateY(-2rem);
+}
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    width: 50%;
+    font-size: 1.4rem;
+}
+.register-button, .login-button{
+    color: blue !important;
+    font-size: 1.4rem;
+}
+.register-button:hover, .login-button:hover {
+    font-size: 1.6rem;
+    color: rgba(0,0,0,0.8)
+}
+.register > * {
+    flex: 1;
+}
+.back-arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem;
+    color:rgba(255, 255, 255, 0.6);
+    height: 6%;
+    width: 4%;
+    text-align: center;
+    background-color: transparent;  
+}
+.back-arrow i {
+    font-size: 3rem;
+    transform-origin: center;
+    transition: all 150ms ease-in-out;
+}
+.back-arrow i:hover {
+    font-size: 3.5rem;
+}
+
+

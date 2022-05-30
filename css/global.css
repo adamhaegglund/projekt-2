@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Teko', sans-serif;
+}
+input {
+    border: none;
+    outline: none;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+button {
+    border: none;
+    transition: all 150ms ease-in-out;
+    font-size: 1.2rem;
+    background-color: white;
+}
+button:hover{
+    cursor: pointer;
+}
+.page-container{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+}
+.hidden {
+    display: none !important;
+}
+.nav-container {
+    height: 12%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.nav-container .register-login-list {
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.nav-container nav {
+    padding: 5rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-container h1 {
+    flex: 1;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+}
+.nav-container ul {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 2rem;
+}
+.main-content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 88%; */
+    width: 100%;
+    position: relative;
+    /* overflow: hidden; */
+}
+.main-content-container .background-image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.main-content-container .background-image img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.blur-background{
+    background-color: rgb(255, 255, 255, 0.3);
+    backdrop-filter: blur(40px);
+    border-radius: 5px;
+}

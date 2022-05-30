@@ -1,0 +1,12 @@
+.post-news-container{
+    width:50%;
+}
+
+.post-news-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.post-news-container textarea{
+    resize: none;
+}

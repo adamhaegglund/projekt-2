@@ -1,0 +1,81 @@
+
+.setlist-container-grid{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.main-content-container{
+    align-items: baseline;
+}
+
+.artist-wrapper a{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    transition: ease-in 0.1s;
+}
+
+.artist-wrapper a:hover{
+    font-size:20px;
+}
+
+.top-rated-setlists{
+    margin: 10px 0px 10px 0px;
+    padding: 20px;
+}
+
+.recent-edited-setlists{
+    padding: 20px;
+}
+
+.setlist-container-grid input{
+    height: 10%;
+    margin: 20px 0px 20px 0px;
+    width: 100%;
+    padding: 10px;
+}
+
+.left-page-container{
+    width: 44.4%;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.right-page-container{
+    width: 33.33%;
+}
+
+.artist-title{
+    font-size: 35px;
+    letter-spacing: 4px;
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.artist-wrapper .date{
+    display: flex;
+    align-items: center;
+}
+
+.latest-posts{
+    padding: 20px;
+}
+
+.post-wrapper a{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.post-title-artist{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.user-date{
+    display: flex;
+    color: rgb(161, 161, 161);
+}

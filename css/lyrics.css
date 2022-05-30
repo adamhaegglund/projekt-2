@@ -1,0 +1,47 @@
+.lyrics-main-container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.lyrics-title{
+    grid-column: 3 / 8;
+    margin: 0px 0px 20px 0px;
+}
+.lyrics-title p{
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 18px;
+    text-align: center;
+    padding: 1rem;
+    margin-top: -10%;
+}
+
+.search-bar{
+    grid-column: 4 / 7;
+}
+.search-bar input{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(255, 255,255, 0.6);
+    backdrop-filter: blur(30px);
+    border-radius: 10px;
+    height: 75px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin: 1% 0 1% 0;
+}
+
+.search-bar input:focus{
+    outline: none;
+}
+#button-search-lyrics {
+    grid-column: 4 / 7;
+    height: 80%;
+    color: white;
+}
+button:hover {
+    transform: scale(1.1);
+}
+

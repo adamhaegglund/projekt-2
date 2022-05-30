@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/projekt-2/css/global.css" />
+		<link rel="stylesheet" href="/projekt-2/css/login.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/bb83491b31.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="/js/ajax.js"></script>
+		<script defer src="/projekt-2/js/login.js"></script>
+		<title>Login/Register</title>
+	</head>
+	<body>
+		<div class="page-container">
+			<div class="back-arrow">
+				<i class="fa-solid fa-arrow-left-long fa-xl"></i>
+			</div>
+			<div class="image-container">
+				<img
+					src="../static/img/login-image.png"
+					alt="Singer with hair standing with one hand in the air"
+				/>
+			</div>
+			<div class="register-login-container">
+				<div class="form-container-login login-container hidden">
+					<h2>Log In</h2>
+					<form action="/projekt-2/php/login.php" method="POST">
+						<div class="form-wrapper">
+							<label for="username">Username</label>
+							<input name="username" type="text" autocomplete="off" />
+						</div>
+						<div class="form-wrapper">
+							<label for="password">Password</label>
+							<input name="password" type="password" autocomplete="off" />
+						</div>
+						<button type="submit">Log in</button>
+					</form>
+					<div class="register">
+						<p>Not a member?</p>
+						<button class="register-button">Register here!</button>
+					</div>
+				</div>
+				<div class="form-container register-container">
+					<h2>Register</h2>
+					<form action="/projekt-2/php/register.php" method="POST"">
+						<div class="form-wrapper">
+							<label for="username">Username</label>
+							<input name="username" type="text" autocomplete="off" />
+						</div>
+						<div class="form-wrapper">
+							<label for="email">Email</label>
+							<input name="email" type="email" autocomplete="off" />
+						</div>
+						<div class="form-wrapper">
+							<label for="password">Password</label>
+							<input name="password" type="password" autocomplete="off" />
+						</div>
+						<div class="form-wrapper">
+							<label for="password">Repeat Password</label>
+							<input name="repeatpassword" type="password" autocomplete="off" />
+						</div>	
+						<button type="submit">Register</button>
+					</form>
+					<div class="register">
+						<p>Already a member?</p>
+						<button class="login-button">Log in here!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

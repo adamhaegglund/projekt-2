@@ -1,0 +1,123 @@
+.profile-section{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    width: 100vw;
+    margin-top: -50px;
+}
+
+.profile-title{
+    grid-column: 2 / 5;
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+.profile-info{
+    grid-column: 2 / 5;
+
+}
+
+.info-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: white;
+    align-items: center;
+    padding: 5px;
+}
+
+.infoname{
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.infouser{
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: 300;
+    
+}
+
+.edituser{
+    display: flex;
+    justify-content: center;   
+}
+
+.edituser span{
+    margin-left: 10px;
+}
+
+.edituser button{
+    background-color: transparent;
+    color: white;
+    font-weight: 300;
+}
+
+.edituser button:hover{
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.change-password-wrapper{
+    grid-column: span 3;
+    text-align: center;
+}
+
+.change-password-wrapper button{
+    background-color: transparent;
+    color: white;
+    font-size: 35px;
+    margin: 10px 0px 10px 0px;
+}
+
+.change-password-wrapper button:hover{
+    font-size: 36px;
+}
+
+.updateinfo{
+    grid-column: span 3;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255,255, 0.2);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+}
+.updateinfo input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255,255, 0.6);
+    backdrop-filter: blur(30px);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.updateinfo input:focus{
+    outline: none;
+}
+
+.updateinfo button{
+    background-color: transparent;
+    color: white;
+}
+
+.updateinfo button:hover{
+    cursor: pointer;
+}
+
+#updateUsername{
+    display: none;
+}
+
+#updateEmail{
+    display: none;
+}
+
+#updatePassword{
+    display:none;
+}
+
+.main-content-container{
+    height: 88%;
+}

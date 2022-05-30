@@ -1,0 +1,215 @@
+.main-grid{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    width: 100%;
+    height: 90%; 
+}
+
+.setlist-container{
+    margin-top: 10px;
+    grid-column: 3 /8;
+    background-color: rgba(255, 255, 255, 0.3);;
+    backdrop-filter: blur(40px);
+    border-radius: 13px;
+}
+.setlist-container-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 25px 10px 25px 10px;
+    gap: 10px;
+
+}
+.song-container{
+    border-right: 1px solid black;
+    grid-column: span 2;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+.artist-container a{
+    text-decoration: none;
+    color: black;
+}
+
+.artist-container h3{
+    font-weight: 500;
+}
+.artist-container h4{
+    font-weight: 500;
+    color: rgba(0,0,0,0.6);
+}
+
+.more-from-artist-container{
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.more-from-artist-container h3{
+    text-align: center;
+    
+}
+
+.artist-info-wrap{
+    padding: 10px;
+}
+
+.artist-info-wrap a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+.artist-info-wrap span{
+    margin-left: 10px;
+}
+
+.favorite-set{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 50px;
+    
+}
+.favorite-set span{
+    margin-left: 10px;
+}
+
+.favorite-set button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-style: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.favorite-set button:hover{
+    cursor: pointer
+}
+
+.discuss-container{
+    grid-column: 3/ 8;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);;
+    backdrop-filter: blur(40px);
+    border-radius: 13px;
+}
+
+.posts-container{
+    grid-column: 3/ 8;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);;
+    backdrop-filter: blur(40px);
+    border-radius: 13px;
+    width: fit-content;
+    max-width: 70%;
+}
+
+.song-wrapper{
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+    display:flex;
+    text-align: center;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 10px 10px 10px
+}
+
+.song-wrapper-img img{
+    width: 20px;
+}
+
+.discuss-set{
+    font-size: 30px;
+    width: 70%;
+}
+.discuss-container span{
+    justify-content: left;
+}
+
+.postcomment{
+    width: 30%;
+    text-align: center;
+}
+
+.comment-content{
+    padding: 10px;
+    font-size: 18px;
+}
+
+.comment-content p{
+    display: block;
+    white-space: pre-line;
+}
+
+.post-by-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.post-by-wrapper span{
+    margin-left: 20px;
+    color: rgba(0,0,0,0.6);
+}
+
+.backdrop-blur {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.discuss-container button{
+    background-color: transparent;
+}
+
+#comment-container{
+    display: none;
+    width: 100%;
+    justify-content: center;
+}
+
+#comment-container textarea{
+    resize: none;
+    border-style: none;
+    background-color: rgb(255, 255, 255, 0.5);
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+#comment-container form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
+
+#comment-container button{
+    margin-top: 0.2rem;
+}
+  
+  /* if backdrop support: very transparent and blurred */
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .backdrop-blur {
+      background-color: rgba(255, 255, 255, .5);
+      -webkit-backdrop-filter: blur(2em);
+      backdrop-filter: blur(2em);
+    }
+}
