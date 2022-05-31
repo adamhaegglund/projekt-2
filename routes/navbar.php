@@ -37,7 +37,7 @@ echo'
 							';
 								if($_SESSION['isAdmin'] == 1){
 									echo '<li>
-									<a href="/projekt-2/routes/adminpage.html">Admin page</a>
+									<a href="/projekt-2/routes/adminpage.php">Admin page</a>
 									</li>';
 								}
 						echo '<form action="/projekt-2/php/logout.php" method="POST" class="logout-form">

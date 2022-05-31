@@ -1,6 +1,6 @@
 <?php
 session_start();
 session_destroy();
-header("Location: /projekt-2/index.html?logged_out");
+header("Location: /projekt-2/index.php?logged_out");
 exit;
 ?>

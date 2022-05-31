@@ -13,6 +13,7 @@
 </head>
 <body>
     <div class="page-container">
+    <?php include "./navbar.php";?>
         <div class="main-content-container">
             <div class="post-news-container">
                 <form action="">
