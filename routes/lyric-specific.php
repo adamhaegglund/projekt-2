@@ -13,6 +13,7 @@
 </head>
 <body>
     <div class="page-container">
+    <?php include "./navbar.php";?>
         <div class="main-content-container">
             <div class="background-image">
                 <img src="/projekt-2/static/img/lyric-specific-background.jpg" alt="a microphone with stand">

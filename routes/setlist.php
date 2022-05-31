@@ -18,37 +18,7 @@
 	</head>
 	<body>
 		<div class="page-container">
-			<div class="nav-container">
-				<nav>
-					<h1>sceneSetter</h1>
-					<ul class="links-list">
-						<li>
-							<a href="/projekt-2/routes/setlist.html">setlists</a>
-						</li>
-						<li>
-							<a href="/projekt-2/routes/lyrics.html">lyrics</a>
-						</li>
-						<li>
-							<a href="/projekt-2/routes/forums.html">forums</a>
-						</li>
-					</ul>
-					<div class="button-menu-container">
-						<button class="user-button">Hi, User</button>
-						<ul class="user-dropdown">
-							<li><a href="/projekt-2/routes/user-routes/profile.html">Profile</a></li>
-							<li>
-								<a href="/projekt-2/routes/user-routes/favoriteArtists.html"
-									>Favorite Artists</a
-								>
-							</li>
-							<li>
-								<a href="/projekt-2/routes/user-routes/favoriteSets.html">Favorite Sets</a>
-							</li>
-							<li><a href="">Logout</a></li>
-						</ul>
-					</div>
-				</nav>
-			</div>
+		<?php include "./navbar.php";?>
 			<div class="main-content-container">
 				<div class="background-image">
 					<img

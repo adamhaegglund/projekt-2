@@ -61,3 +61,7 @@
 .artist-location-right{
     text-align: right;
 }
+
+.main-content-container{
+    height: 88%;
+}

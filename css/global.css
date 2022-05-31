@@ -63,6 +63,11 @@ button:hover{
     list-style: none;
     font-size: 2rem;
 }
+.nav-container .navlogo{
+    flex: 1;
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+}
 .main-content-container {
     display: flex;
     justify-content: center;
